@@ -1,0 +1,17 @@
+{
+  "name": "webupgrade-main",
+  "version": "1.0.0",
+  "description": "Web Upgrade Project",
+  "main": "backend.js",
+  "scripts": {
+    "start": "node backend.js"
+  },
+  "dependencies": {
+    "axios": "^0.24.0",
+    "body-parser": "^1.20.2",
+    "cors": "^2.8.5",
+    "express": "^4.19.2"
+  },
+  "author": "",
+  "license": "ISC"
+}
