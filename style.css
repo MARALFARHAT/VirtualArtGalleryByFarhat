@@ -1,0 +1,225 @@
+body {
+    margin: 0;
+    font-family: 'Times New Roman', Times, serif;
+}
+
+nav {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-image: url('BackNAV.jpg'); /* Add your background image here */
+    background-size: cover;
+    background-position: center;
+    padding: 1rem;
+    position: fixed;
+    width: 100%;
+    top: 0;
+    z-index: 1000; /* Ensure the nav is above other elements */
+}
+
+nav::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(255, 255, 255, 0.4); /* Background with opacity */
+    z-index: -1; /* Place background behind text */
+}
+
+.nav-left {
+    display: flex;
+    list-style: none;
+    align-items: center;
+    padding: 20px 0;
+    margin: 0;
+    justify-content: center;
+}
+
+.nav-left li {
+    margin: 0 30px; /* Increase spacing between nav items */
+}
+
+.nav-left li a {
+    text-decoration: none;
+    color: rgb(0, 0, 0);
+    font-size: 25px; /* Increase font size */
+    transition: color 0.3s ease, border-bottom 0.3s ease; /* Smooth transition for hover effects */
+}
+
+.nav-left li a:hover {
+    color: rgb(98, 51, 14);
+    border-bottom: 2px solid rgb(98, 54, 11); /* Underline effect on hover */
+}
+
+/* Typing Animation CSS */
+.typing-container {
+    display: inline-block;
+    overflow: hidden;
+    white-space: pre-wrap; /* To preserve newline characters */
+    border-right: 1px solid black;
+    font-size: 1.5em; /* Adjust font size as needed */
+    animation: blink-caret .75s step-end infinite;
+    text-align: justify; /* Justify the text */
+}
+
+@keyframes blink-caret {
+    from, to { border-color: transparent; }
+    50% { border-color: black; }
+}
+
+.content {
+    margin-top: 100px; /* Adjust to avoid overlap with fixed navbar */
+    padding: 20px;
+    display: flex;
+    justify-content: flex-start;
+    align-items: flex-start; /* Align items to the start */
+}
+
+.video-container {
+    display: flex;
+    align-items: flex-start;
+}
+
+video {
+    max-width: 450px; /* Adjust the size of the video */
+    margin-right: 40px; /* Increase space between video and description */
+}
+
+.video-description {
+    max-width: 950px; /* Adjust the size of the description */
+    margin-left: 20px;
+}
+
+.contact-and-qr-section {
+    display: flex;
+    justify-content: flex-start;
+    align-items: flex-start;
+    margin-top: 20px;
+}
+
+.contact-section {
+    border: 2px solid #ccc;
+    border-radius: 10px;
+    padding: 10px;
+    width: 1450px; /* Match the width of the video */
+    margin-left: 17px; /* Add space between contact and QR codes */
+}
+
+.contact-form {
+    text-align: left;
+}
+
+.contact-form .form-group {
+    margin-bottom: 20px;
+}
+
+.contact-form label {
+    display: block;
+    font-weight: bold;
+    margin-bottom: 5px;
+}
+
+.contact-form textarea,
+.contact-form input[type="email"] {
+    width: 100%;
+    padding: 10px;
+    border-radius: 5px;
+    background-color: rgba(110, 59, 22, 0.166); /* Gray with low opacity */
+    border: none; /* No border */
+}
+
+.contact-form button {
+    padding: 10px 40px; /* Longer button */
+    border: none;
+    border-radius: 5px;
+    background-color: #5e301a;
+    color: #fff;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+.contact-form button:hover {
+    background-color: #5c341391;
+}
+
+.qr-codes {
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    align-items: flex-start;
+    gap: 20px; /* Space between QR codes */
+}
+
+.qr-code {
+    text-align: center;
+}
+
+.qr-code img {
+    width: 150px; /* Smaller QR code size */
+    height: 150px;
+}
+@media (max-width: 768px) {
+    nav {
+      flex-direction: column;
+      padding: 0.5rem;
+    }
+  
+    .nav-left {
+      flex-direction: column;
+      padding: 10px 0;
+    }
+  
+    .nav-left li {
+      margin: 10px 0;
+    }
+  
+    .nav-left li a {
+      font-size: 1.2rem; /* Adjusted font size for mobile */
+    }
+  
+    .content {
+      flex-direction: column;
+      margin-top: 70px; /* Adjust to avoid overlap with fixed navbar */
+      padding: 10px;
+    }
+  
+    .video-container {
+      flex-direction: column;
+      align-items: center;
+    }
+  
+    video {
+      max-width: 100%;
+      margin-right: 0;
+      margin-bottom: 20px;
+    }
+  
+    .video-description {
+      max-width: 100%;
+      margin-left: 0;
+    }
+  
+    .contact-and-qr-section {
+      flex-direction: column;
+      margin-top: 10px;
+    }
+  
+    .contact-section {
+      width: 100%;
+      margin-left: 0;
+    }
+  
+    .qr-codes {
+      flex-direction: column;
+      align-items: center;
+      gap: 10px;
+    }
+  
+    .qr-code img {
+      width: 100px; /* Adjust QR code size for mobile */
+      height: 100px;
+    }
+  }
+  

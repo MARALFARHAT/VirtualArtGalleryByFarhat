@@ -1,0 +1,163 @@
+body {
+    margin: 0;
+    padding: 0;
+    font-family: 'Times New Roman', Times, serif;
+    color: rgb(64, 29, 8);
+    display: flex;
+    flex-direction: column;
+    overflow-x: hidden; /* Removes horizontal scroll */
+    background-image: url('Back3.jpg');
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed; /* Ensures background doesn't move with the content */
+}
+
+header {
+    position: absolute;
+    width: 100%;
+    top: 0;
+    z-index: 10;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 0 20px;
+}
+
+nav {
+    display: flex;
+    width: 100%;
+    justify-content: center;
+    align-items: center;
+}
+
+.nav-left {
+    list-style: none;
+    display: flex;
+    align-items: center;
+    padding: 20px 0;
+    margin: 0;
+    justify-content: center;
+}
+
+.nav-left li {
+    margin: 0 30px; /* Increase spacing between nav items */
+}
+
+.nav-left li a {
+    text-decoration: none;
+    color: rgb(98, 51, 14);
+    font-size: 25px; /* Increase font size */
+    transition: color 0.3s ease, border-bottom 0.3s ease; /* Smooth transition for hover effects */
+}
+
+.nav-left li a:hover {
+    color: rgb(255, 255, 255);
+    border-bottom: 2px solid rgb(98, 54, 11); /* Underline effect on hover */
+}
+
+main {
+    flex-grow: 1;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding-top: 100px; /* Space for the header */
+}
+
+.search-container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 300px; /* Adjust if needed */
+    width: 100%;
+}
+
+.search-container input {
+    padding: 15px;
+    font-size: 15px;
+    border: none;
+    border-radius: 100px 0 0 100px;
+    outline: none;
+    width: 600px;
+    opacity: 45%;
+    height: 60px; /* Set the height of the input field */
+}
+
+.search-container button {
+    padding: 0; /* Remove padding */
+    border: none;
+    font-size: 20px;
+    font-family: 'Times New Roman', Times, serif;
+    font-weight: 500;
+    border-radius: 0 100px 100px 0;
+    background-color: rgb(255, 255, 255);
+    opacity: 100%;
+    cursor: pointer;
+    outline: none;
+    height: 60px; /* Set the height of the button */
+    width: 110px; /* Set the width to match the height */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.slogan {
+    font-size: 45px; /* Adjust the size as needed */
+    margin: 20px 0; /* Space between the search bar and slogan */
+    font-weight: bold;  /* Make the slogan bold */
+    text-align: center;  /* Center the text */
+    z-index: 200;
+    font-style: italic;
+    opacity: 60%;
+}
+
+#image-results {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr); /* 3 images per row */
+    gap: 10px;
+    padding: 20px;
+    width: 80%;
+    margin: 20px auto;
+    background: rgba(207, 125, 43, 0.396);
+    border-radius: 10px;
+}
+
+#image-results img {
+    width: 100%;
+    height: auto;
+    border-radius: 10px;
+    transition: transform 0.3s ease;
+}
+
+#image-results img:hover {
+    transform: scale(1.05);
+}
+
+@media (max-width: 768px) {
+    .nav-left li {
+        margin: 0 15px; /* Reduce margin for smaller screens */
+    }
+
+    .nav-left li a {
+        font-size: 16px; /* Adjust font size for smaller screens */
+    }
+
+    .search-container input, .search-container button {
+        font-size: 16px; /* Adjust font size for smaller screens */
+        padding: 10px;
+        height: 40px; /* Adjust height for smaller screens */
+    }
+
+    .slogan {
+        font-size: 18px; /* Adjust font size for smaller screens */
+        margin: 10px 0; /* Reduce margin for smaller screens */
+    }
+
+    .search-container button img {
+        height: 25px; /* Adjust logo size for smaller screens */
+        width: 25px;
+    }
+
+    #image-results {
+        grid-template-columns: repeat(auto-fit, minmax(150px, 1fr)); /* Adjust for smaller screens */
+    }
+}

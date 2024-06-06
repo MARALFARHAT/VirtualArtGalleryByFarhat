@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Art Gallery with Video</title>
+    <link
+      href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css"
+      rel="stylesheet"
+    />
+    <link href="style.css" rel="stylesheet" />
+  </head>
+  <body>
+    <nav>
+      <ul class="nav-left">
+        <li><a href="index.html">Home</a></li>
+        <li><a href="AR.html">AR Experience</a></li>
+        <li><a href="VRindex.html">VR Experience</a></li>
+        <li><a href="magazine.html">Magazine</a></li>
+        <li><a href="image-generator.html">Image Generator</a></li>
+        <li><a href="about-us.html">About Us</a></li>
+        <li><a href="exhibition.html">Exhibition</a></li>
+        <li><a href="login.html">Login</a></li>
+      </ul>
+    </nav>
+
+    <div class="content">
+      <div class="video-container">
+        <video autoplay muted loop>
+          <source src="Video.MOV" type="video/mp4" />
+          Your browser does not support the video tag.
+        </video>
+        <div class="video-description">
+          <h2>L'Art Gallery</h2>
+          <div class="typing-container"></div>
+        </div>
+      </div>
+    </div>
+    <section class="contact-and-qr-section">
+      <div class="contact-section">
+        <h3>Contact Us</h3>
+        <div class="contact-form">
+          <div class="form-group">
+            <textarea
+              class="form-control"
+              id="comment"
+              name="comment"
+              placeholder="Comment or Inquiry"
+              rows="4"
+              required
+            ></textarea>
+          </div>
+          <div class="form-group">
+            <input
+              type="email"
+              class="form-control"
+              id="email"
+              name="email"
+              placeholder="Email"
+              required
+            />
+          </div>
+          <button type="submit" class="btn btn-primary">Send</button>
+        </div>
+      </div>
+    <script src="script.js"></script>
+    <script src="java.js"></script>
+    <script src="https://aframe.io/releases/1.2.0/aframe.min.js"></script>
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.5.4/dist/umd/popper.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+  </body>
+</html>

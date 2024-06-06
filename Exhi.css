@@ -1,0 +1,101 @@
+body, html {
+    margin: 0;
+    padding: 0;
+    width: 100%;
+    height: 100%;
+    font-family:'Times New Roman', Times, serif;
+  }
+  
+  .navbar {
+    background: none !important;
+    position: fixed;
+    width: 100%;
+    top: 0;
+    color: #380505;
+    padding: 1rem;
+  }
+  
+  .navbar-nav .nav-link {
+    color: white;
+    font-size: 1.7rem;
+    border-bottom: #380505;
+    transition: color 0.3s ease;
+  }
+  
+  .navbar-nav .nav-link:hover {
+    color: #220505;
+  }
+  
+  .hero-section {
+    background: url('Backexhib.webp') no-repeat center center/cover;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: rgb(255, 255, 255);
+    text-shadow: 0 2px 4px rgba(0, 0, 0, 0.8);
+  }
+  
+  .hero-content {
+    text-align: center;
+  }
+  
+  .display-4 {
+    font-size: 3.5rem;
+    margin-bottom: 0.5rem;
+  }
+  
+  .lead {
+    font-size: 1.25rem;
+    margin-bottom: 1rem;
+  }
+  
+  .exhibition-details {
+    font-size: 1rem;
+    margin-bottom: 1rem;
+  }
+  
+  .btn-primary {
+    background-color: #6e6e6f34;
+    border-color: #ffffff;
+    padding: 0.75rem 1.25rem;
+    font-size: 1.25rem;
+  }
+  
+  .btn-primary:hover {
+    background-color: #380505;
+    border-color: #ffffff;
+  }
+  @media (max-width: 768px) {
+    .navbar {
+      padding: 0.5rem;
+    }
+  
+    .navbar-nav .nav-link {
+      font-size: 1.2rem; /* Adjusted font size for mobile */
+    }
+  
+    .hero-section {
+      height: auto; /* Allow the section to resize based on content */
+      padding: 20px; /* Add padding for spacing */
+      text-align: center; /* Center align text for mobile */
+    }
+  
+    .display-4 {
+      font-size: 2rem; /* Adjusted font size for mobile */
+    }
+  
+    .lead {
+      font-size: 1rem; /* Adjusted font size for mobile */
+    }
+  
+    .exhibition-details {
+      font-size: 0.875rem; /* Adjusted font size for mobile */
+    }
+  
+    .btn-primary {
+      padding: 0.5rem 1rem; /* Adjusted padding for mobile */
+      font-size: 1rem; /* Adjusted font size for mobile */
+    }
+  }
+  
