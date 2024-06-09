@@ -160,66 +160,27 @@ video {
     width: 150px; /* Smaller QR code size */
     height: 150px;
 }
+* Mobile Styles */
 @media (max-width: 768px) {
-    nav {
-      flex-direction: column;
-      padding: 0.5rem;
-    }
-  
-    .nav-left {
-      flex-direction: column;
-      padding: 10px 0;
-    }
-  
-    .nav-left li {
-      margin: 10px 0;
-    }
-  
-    .nav-left li a {
-      font-size: 1.2rem; /* Adjusted font size for mobile */
-    }
-  
-    .content {
-      flex-direction: column;
-      margin-top: 70px; /* Adjust to avoid overlap with fixed navbar */
-      padding: 10px;
-    }
-  
-    .video-container {
-      flex-direction: column;
-      align-items: center;
-    }
-  
-    video {
-      max-width: 100%;
-      margin-right: 0;
-      margin-bottom: 20px;
-    }
-  
-    .video-description {
-      max-width: 100%;
-      margin-left: 0;
-    }
-  
-    .contact-and-qr-section {
-      flex-direction: column;
-      margin-top: 10px;
-    }
-  
-    .contact-section {
-      width: 100%;
-      margin-left: 0;
-    }
-  
-    .qr-codes {
-      flex-direction: column;
-      align-items: center;
-      gap: 10px;
-    }
-  
-    .qr-code img {
-      width: 100px; /* Adjust QR code size for mobile */
-      height: 100px;
-    }
+  .nav-left li a {
+    font-size: 18px;
   }
+
+  .content {
+    padding: 10px;
+    margin-top: 120px;
+  }
+
+  .aframe-container {
+    height: 300px;
+  }
+
+  .exhibitions-list {
+    flex-direction: column;
+  }
+
+  .exhibition-item {
+    width: calc(100% - 40px);
+  }
+}
   
